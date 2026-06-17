@@ -8,7 +8,7 @@ rand_num = randint(int(lower),int(higher))
 
 while True:
     guess = int(input(f'Enter a number between {lower} and {higher}: '))
-    if guess >= lower and guess <= higher:
+    if lower <= guess <= higher:
         if guess == rand_num:
             print('Success')
             break
